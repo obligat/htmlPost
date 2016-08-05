@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <title>POST-NET</title>
+
+</head>
+<body>
+<h1 class="text-center">POST-NET</h1>
+<!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<section id="trans" class="container">
+    <form id="trans_form" role="form">
+        <div class="form-group">
+            <label for="input_code" class="col-md-4 control-label">Input code</label>
+            <div class="col-md-8">
+
+                <input type="text" class="form-control" id="input_code" name="input_code"
+                       placeholder="Please input code here."/>
+            </div>
+            <p class="text-center">Error message should be displayed here .</p>
+        </div>
+    </form>
+    <div class="form-group">
+        <span class="col-md-4 control-label">Result :</span>
+        <span class="col-md-8 control-span">||:::|</span>
+    </div>
+    <label>
+        <input type="radio"  class="col-md-offset-4" form="trans" name="trans_method" value="to_Barcode">Barcode to Zipcode
+    </label>
+    <label>
+        <input type="radio" form="trans" name="trans_method" value="to_Zipcode">Zipcode to Barcode
+    </label>
+    <br>
+    <button type="button" class="btn btn-default col-md-offset-5 ">OK</button>
+</section>
+<section id="history" class="table-responsive container">
+    <h2 class="text-center">history</h2>
+    <table class="table table-striped ">
+        <thead>
+        <tr>
+            <th>code</th>
+            <th>result</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>abcd</td>
+            <td>1234</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>
